@@ -45,3 +45,14 @@ function makeSound(key){
         default: break;
     }
 }
+
+
+function buttonAnmation(key){
+    var element = document.querySelector("." + key);
+    element.classList.add("pressed");
+
+    //Timeout Function
+    setTimeout(function() {
+        element.classList.remove("pressed");
+    }, 100 );
+}
